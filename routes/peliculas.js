@@ -3,8 +3,8 @@ var mongodb = require('mongodb')
 const router = express.Router()
 const Pelicula = require('../models/peliculaModelo')
 
-//Metodo query
-function buildQuery(request) {
+//Filtrar busqueda
+function filtrarBusqueda(request) {
     let parametroDirector = request.query.director
     let parametroAño = request.query.release_year
     let query = {}
@@ -23,7 +23,7 @@ function buildQuery(request) {
 //Obtener peliculas
 router.get('/', async (request, response) => {
     try {
-        const peliculas = await Pelicula.find(buildQuery(request))
+        const peliculas = await Pelicula.find(filtrarBusqueda(request))
         response.json({data: peliculas,  contador: peliculas.length})
     } catch (err) {
         response.status(500).json({ message: err.message })
