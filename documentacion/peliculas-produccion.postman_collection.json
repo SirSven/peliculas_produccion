@@ -1,0 +1,38 @@
+{
+	"info": {
+		"_postman_id": "c36e137b-f1ed-42b8-990a-d6f1c18b37e3",
+		"name": "peliculas-produccion",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "obtener peliculas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/peliculas?director=Jayendra&release_year=2011",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"peliculas"
+					],
+					"query": [
+						{
+							"key": "director",
+							"value": "Jayendra"
+						},
+						{
+							"key": "release_year",
+							"value": "2011"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
