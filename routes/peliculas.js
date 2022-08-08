@@ -20,11 +20,6 @@ function filtrarBusqueda(request) {
     return query
 }
 
-//Inicio
-router.get('/', (request, response) => {
-    response.send("dirigirse a /peliculas para probar api")
-})
-
 //Obtener peliculas
 router.get('/', async (request, response) => {
     try {

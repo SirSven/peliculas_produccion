@@ -47,9 +47,7 @@ Adicionalmente la api cuenta con filtrado por director y año.
   GET http://localhost:3000/peliculas?director=Jayendra&release_year=2011
 ```
 
-
-
-- Forma 2: el directorio docuemtacion cuenta con una coleccion para probar por Postman.
+- Forma 2: el directorio documentacion cuenta con una coleccion para probar por Postman.
 
 ### Autor
 
