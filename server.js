@@ -13,4 +13,9 @@ db.once('open', () => console.log('Conexion establecida con la base de datos'))
 app.use(express.json())
 app.use('/', rutasPeliculas)
 app.set('port', (process.env.PORT || 5000));
+
+app.use('/', (request, response) => {
+    response.sendStatus(404)
+})
+
 app.listen(app.get('port'), () => console.log('Servidor funcionando'))
