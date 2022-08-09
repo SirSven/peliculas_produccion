@@ -1,6 +1,14 @@
 # Peliculas_produccion
 
-api que contiene datos de algunas peliculas que se han filmado en San Francisco y otras regiones.
+Esta api contiene datos de algunas peliculas que se han filmado en San Francisco y otras regiones.
+
+Para implementar esta api utilice la tecnologia nodeJs - express y mongoDB, para hospedar la aplicacion use heroku y github. La razon principal de elegir estas teconologias es porque expressJs agiliza el desarrollo de apis y permite una mejor escalabilidad ya que no requiere de un servidor con mucha memoria o cpu.
+
+## Compensaciones
+
+- Las mejoras que me gustaria haber echo es manejo de errores y enviar logs a un servidor central.
+- Aplicar capa de transformacion al cliente mas sofisticada y flexible.
+- Implementacion de un frontend utilizando HTML, CSS3, jQuery.
 
 ## Tecnologias
 
