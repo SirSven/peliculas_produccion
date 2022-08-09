@@ -14,6 +14,7 @@ api que contiene datos de algunas peliculas que se han filmado en San Francisco 
 ```bash
   git clone https://github.com/SirSven/peliculas_produccion.git
 ```
+
 2.- Direccionarse al directorio donde se clono el proyecto.
 
 3.- Instalar las dependencias:
@@ -36,11 +37,12 @@ api que contiene datos de algunas peliculas que se han filmado en San Francisco 
 
 Hay 2 formas para probar la api.
 
- - Forma 1: crear un request del tipo GET, con este request se obtendran los datos de todas las peliculas, 
+- Forma 1: crear un request del tipo GET, con este request se obtendran los datos de todas las peliculas,
 
  ```bash
   GET http://localhost:3000/peliculas
 ```
+
 Adicionalmente la api cuenta con filtrado por director y año.
 
  ```bash
@@ -51,7 +53,7 @@ Adicionalmente la api cuenta con filtrado por director y año.
 
 ### Autor
 
-- UrielRomero (https://github.com/SirSven)
+- UrielRomero (<https://github.com/SirSven>)
 
 ### Feedback
 
