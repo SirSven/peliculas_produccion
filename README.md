@@ -53,7 +53,7 @@ Adicionalmente la api cuenta con filtrado por director y año.
 
 ### Autor
 
-- UrielRomero (<https://github.com/SirSven>)
+- Uriel Romero (<https://github.com/SirSven>)
 
 ### Feedback
 
