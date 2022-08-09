@@ -48,6 +48,32 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "Crear pelicula",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Star Wars 3\",\n    \"release_year\": 2005,\n    \"locations\": \"Nueva Zelanda\",\n    \"production_company\": \"Lucasfilms\",\n    \"director\": \"George Lucas\",\n    \"writer\": \"Dave Filoni, George Lucas\",\n    \"actor 1\": \"Ewan MccGregor\",\n    \"actor_2\": \"Hayden Christensen\",\n    \"actor_3\": \"Natalie Portman\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{app_url_local}}/peliculas",
+					"host": [
+						"{{app_url_local}}"
+					],
+					"path": [
+						"peliculas"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }

@@ -35,7 +35,7 @@ router.get('/peliculas', async (request, response) => {
 })
 
 //Crear pelicula
-router.post('/', async (request, response) => {
+router.post('/peliculas', async (request, response) => {
     const pelicula = new Pelicula({
         title: request.body.title,
         release_year: request.body.release_year,
