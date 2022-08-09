@@ -20,8 +20,12 @@ function filtrarBusqueda(request) {
     return query
 }
 
-//Obtener peliculas
 router.get('/', async (request, response) => {
+    response.json({name: "Peliculas-produccion", version: "v1.0"})
+})
+
+//Obtener peliculas
+router.get('/peliculas', async (request, response) => {
     try {
         const peliculas = await Pelicula.find(filtrarBusqueda(request))
         response.json({data: peliculas,  contador: peliculas.length})

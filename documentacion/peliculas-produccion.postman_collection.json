@@ -11,12 +11,10 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:3000/peliculas?director=Jayendra&release_year=2011",
-					"protocol": "http",
+					"raw": "{{app_url_prod}}/peliculas?director=Jayendra&release_year=2011",
 					"host": [
-						"localhost"
+						"{{app_url_prod}}"
 					],
-					"port": "3000",
 					"path": [
 						"peliculas"
 					],
@@ -29,6 +27,23 @@
 							"key": "release_year",
 							"value": "2011"
 						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Info",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{app_url_local}}/",
+					"host": [
+						"{{app_url_local}}"
+					],
+					"path": [
+						""
 					]
 				}
 			},

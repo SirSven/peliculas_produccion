@@ -11,6 +11,6 @@ db.collection('peliculas')
 db.once('open', () => console.log('Conexion establecida con la base de datos'))
 
 app.use(express.json())
-app.use('/peliculas', rutasPeliculas)
+app.use('/', rutasPeliculas)
 app.set('port', (process.env.PORT || 5000));
 app.listen(app.get('port'), () => console.log('Servidor funcionando'))
